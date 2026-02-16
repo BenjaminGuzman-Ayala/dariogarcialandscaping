@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@layer components {
+  .animate-fade-in {
+    @apply animate-[fade-in_0.4s_ease-out];
+  }
+
+  .animate-slide-up {
+    @apply animate-[slide-up_0.5s_ease-out];
+  }
+
+  .animate-slide-in-right {
+    @apply animate-[slide-in-right_0.5s_ease-out];
+  }
+
+  .animate-scale-in {
+    @apply animate-[scale-in_0.3s_ease-out];
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 44 30% 95%;
+    --foreground: 22 59% 15%;
+    --card: 44 30% 98%;
+    --card-foreground: 22 59% 15%;
+    --popover: 44 30% 98%;
+    --popover-foreground: 22 59% 15%;
+    --primary: 72 64% 23%;
+    --primary-foreground: 44 30% 95%;
+    --secondary: 44 25% 90%;
+    --secondary-foreground: 22 59% 15%;
+    --muted: 44 20% 92%;
+    --muted-foreground: 22 20% 40%;
+    --accent: 35 78% 59%;
+    --accent-foreground: 22 59% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 44 20% 84%;
+    --input: 44 20% 84%;
+    --ring: 72 64% 23%;
+    --chart-1: 72 64% 23%;
+    --chart-2: 35 78% 59%;
+    --chart-3: 22 59% 28%;
+    --chart-4: 67 41% 43%;
+    --chart-5: 49 28% 65%;
+    --radius: 0.5rem;
+    --sidebar-background: 44 30% 95%;
+    --sidebar-foreground: 22 59% 15%;
+    --sidebar-primary: 72 64% 23%;
+    --sidebar-primary-foreground: 44 30% 95%;
+    --sidebar-accent: 44 25% 90%;
+    --sidebar-accent-foreground: 22 59% 15%;
+    --sidebar-border: 44 20% 84%;
+    --sidebar-ring: 72 64% 23%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
