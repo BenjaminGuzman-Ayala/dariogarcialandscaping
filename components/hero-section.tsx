@@ -9,10 +9,10 @@ export function HeroSection() {
     <section className="relative min-h-[600px] lg:min-h-[700px]">
       {/* Background image */}
       <Image
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg6-Iy64Q7BjO438PukAODzQRu3cnHwNR5.webp"
+        src="/dglawn.webp"
         alt="Luxury residential backyard with lush green lawn and professional landscaping by Dario Garcia Landscaping"
         fill
-        sizes="100vw"
+        sizes="90vw"
         className="object-cover"
         priority
       />

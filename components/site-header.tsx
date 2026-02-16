@@ -39,7 +39,7 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-3 shrink-0 group">
           <div className="animate-fade-in">
             <Image
-              src="/images/logo.svg"
+              src="/dario-garcia-landscaping_logo_transparent.png"
               alt="Dario Garcia Landscaping"
               width={180}
               height={60}

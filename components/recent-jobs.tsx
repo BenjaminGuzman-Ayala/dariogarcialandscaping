@@ -5,42 +5,42 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg9-LPri7wSx8bUTJVMqyz6NtTfTfgRqFl.webp",
+    src: "/dg9.webp",
     alt: "Residential front yard landscaping with manicured lawn and ornamental trees in Chicago suburbs",
     label: "Residential Landscaping",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg6-Iy64Q7BjO438PukAODzQRu3cnHwNR5.webp",
+    src: "/dg6.webp",
     alt: "Backyard lawn care and mulch bed installation with mature trees",
     label: "Backyard Design",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg4-yFH7ys1iZn3qtZD5vqcCGSKzTIWPz9.webp",
+    src: "/dg4.webp",
     alt: "Aerial view of commercial asphalt paving project for restaurant parking lot",
     label: "Commercial Paving",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg5-B5hWMTG8JLQsnX2JEmgO1hdHZzEsWJ.webp",
+    src: "/dg5.webp",
     alt: "White vinyl privacy fence installation on brick paver surface",
     label: "Fence & Paver Install",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg2-PW2HTySl8BuhmfG6AeSW0JAT1js6NQ.webp",
+    src: "/dg2.webp",
     alt: "Commercial snow removal with cleared sidewalk path in Chicago winter",
     label: "Snow Removal",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg7-MZP6rtWaSLDzvDY5UYft6NtNVdAvYy.webp",
+    src: "/dg7.webp",
     alt: "Fresh asphalt seal coating on commercial lot in Summit IL",
     label: "Seal Coating",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg8-jIHyS2jxNUBsUqdgHZG1FlHjXsUFMC.webp",
+    src: "/dg8.webp",
     alt: "Residential lawn maintenance with trimmed hedges in front of brick home",
     label: "Lawn Maintenance",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg10-JaVUJHbXEYMy8TqPSwEvYd1RkMLRmx.webp",
+    src: "/dg10.webp",
     alt: "Fresh mulch bed with new plantings and landscape lighting installation",
     label: "Garden & Planting",
   },

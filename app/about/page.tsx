@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg13-22gI6WfPNxHBLLOiAfEnk9I3SVOC9w.webp"
+                src="/dg13.webp"
                 alt="The Dario Garcia Landscaping full crew standing in front of branded company vans"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

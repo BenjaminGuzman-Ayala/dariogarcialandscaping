@@ -30,7 +30,7 @@ const services = [
     icon: TreePine,
     title: "Landscaping",
     location: "Summit, IL & Chicago Area",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg12-o94H0utvqDCBlSOggirYRC2xfMkgUB.webp",
+    image: "/dg12.webp",
     imageAlt: "Beautiful curving mulch bed borders with ornamental shrubs and trees",
     description:
       "Transform your outdoor space with our professional landscaping services. We handle everything from garden design and planting to complete landscape overhauls for residential and commercial properties throughout Summit, IL and the greater Chicago area.",
@@ -47,7 +47,7 @@ const services = [
     icon: Leaf,
     title: "Lawn Care",
     location: "Chicago & Surrounding Suburbs",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg11-hrX9Ko0Uc3jNfr646unpuJ3ulUPMJO.webp",
+    image: "/dg11.webp",
     imageAlt: "Professional power raking and dethatching on residential lawn",
     description:
       "Keep your lawn healthy, green, and beautiful year-round with our comprehensive lawn care programs. From regular mowing and trimming to fertilization and aeration, we provide everything your lawn needs to thrive in the Chicago climate.",
@@ -64,7 +64,7 @@ const services = [
     icon: Shovel,
     title: "Tree Removal",
     location: "Chicago Area",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg17-GY4yR80CQXYr9IiOTqM102VN6KyzBQ.webp",
+    image: "/dg17.webp",
     imageAlt: "Crew working with equipment for tree and yard cleanup on residential street",
     description:
       "Our experienced tree service team handles everything from routine trimming to complete tree removal. We use proper equipment and safety protocols to protect your property and surrounding structures during every job in the Chicago area.",
@@ -81,7 +81,7 @@ const services = [
     icon: Snowflake,
     title: "Snow Removal",
     location: "Summit, IL & Chicagoland",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg2-PW2HTySl8BuhmfG6AeSW0JAT1js6NQ.webp",
+    image: "/dg2.webp",
     imageAlt: "Commercial snow removal with cleared sidewalk path next to brick building",
     description:
       "Do not let Chicago winters slow you down. Our reliable snow removal services keep your driveways, sidewalks, and parking lots clear and safe throughout the winter season. We offer both residential and commercial snow management plans.",
@@ -98,7 +98,7 @@ const services = [
     icon: Layers,
     title: "Brick Paving",
     location: "Summit, IL & Surrounding Areas",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg19-op4r1oVeLErUVggUFzj76WlYQLBJ0W.webp",
+    image: "/dg19.webp",
     imageAlt: "Herringbone brick paver driveway installation at residential home",
     description:
       "Add beauty and value to your property with professional brick paver installation. We create stunning patios, walkways, driveways, and retaining walls using high-quality materials and expert craftsmanship.",
@@ -115,7 +115,7 @@ const services = [
     icon: Fence,
     title: "Fence Installation",
     location: "Chicago Suburbs",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg5-B5hWMTG8JLQsnX2JEmgO1hdHZzEsWJ.webp",
+    image: "/dg5.webp",
     imageAlt: "White vinyl privacy fence installation along brick paver walkway",
     description:
       "Enhance your property's privacy, security, and curb appeal with a professionally installed fence. We offer a variety of styles and materials to complement any property in the Chicago suburbs.",
@@ -132,7 +132,7 @@ const services = [
     icon: Hammer,
     title: "Asphalt & Seal Coating",
     location: "Summit, IL & Chicago Area",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg7-MZP6rtWaSLDzvDY5UYft6NtNVdAvYy.webp",
+    image: "/dg7.webp",
     imageAlt: "Fresh asphalt seal coating on commercial lot in Summit IL",
     description:
       "Protect and restore your asphalt surfaces with our professional paving and seal coating services. We help extend the life of your driveway or parking lot while improving its appearance.",
@@ -149,7 +149,7 @@ const services = [
     icon: Sprout,
     title: "Synthetic Lawn Installation",
     location: "Chicago & Surrounding Suburbs",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg6-Iy64Q7BjO438PukAODzQRu3cnHwNR5.webp",
+    image: "/dg6.webp",
     imageAlt: "Lush green lawn with mulch beds and mature trees in residential backyard",
     description:
       "Enjoy a perfect, maintenance-free lawn year-round with our synthetic turf installation. Ideal for homeowners and businesses who want a beautiful green space without the constant upkeep.",
@@ -166,7 +166,7 @@ const services = [
     icon: Droplets,
     title: "Drainage Solutions",
     location: "Summit, IL & Chicago Suburbs",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg16-OgyytuU6FFAjNR8J2uhY5Zkw9D25zx.webp",
+    image: "/dg16.webp",
     imageAlt: "Crew working on yard grading and preparation with pavers and landscaping",
     description:
       "Protect your property from water damage with expert drainage solutions. We design and install systems that redirect water away from your foundation, lawn, and landscaped areas.",
@@ -183,7 +183,7 @@ const services = [
     icon: Box,
     title: "4D Landscape Designs",
     location: "Summit, IL & Chicago Area",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg20-VuaBJgAJmJ80xVHIdLfktd1AYb0KI9.webp",
+    image: "/dg20.webp",
     imageAlt: "Aerial view of stunning brick paver patio design with integrated planters",
     description:
       "Visualize your dream outdoor space before a single shovel hits the ground. Our 4D landscape design service creates detailed, interactive renderings of your project so you can see exactly how your new landscape, patio, or outdoor living area will look and evolve through the seasons.",

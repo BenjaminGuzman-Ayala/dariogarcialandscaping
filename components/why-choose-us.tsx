@@ -42,7 +42,7 @@ export function WhyChooseUs() {
           {/* Image */}
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dg13-22gI6WfPNxHBLLOiAfEnk9I3SVOC9w.webp"
+              src="/dg13.webp"
               alt="Dario Garcia Landscaping full crew in front of branded company vans"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

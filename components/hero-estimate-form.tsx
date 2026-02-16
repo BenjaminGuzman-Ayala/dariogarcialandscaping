@@ -106,6 +106,13 @@ export function HeroEstimateForm() {
             required
             className="text-sm"
           />
+          <Input
+            name="propertyAddress"
+            type="text"
+            placeholder="Street address, city, zip code"
+            required
+            className="text-sm"
+          />
 
           <Select name="service" required>
             <SelectTrigger className="text-sm">
@@ -122,7 +129,7 @@ export function HeroEstimateForm() {
 
           <Textarea
             name="message"
-            placeholder="Project Details"
+            placeholder="Tell us about your project..."
             rows={2}
             className="text-sm resize-none"
           />
