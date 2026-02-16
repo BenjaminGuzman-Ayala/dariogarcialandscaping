@@ -126,10 +126,10 @@ export default function ReviewsPage() {
                 ))}
               </div>
               <span className="text-sm font-semibold text-foreground">
-                5.0 Average Rating
+                4.8 Average Rating
               </span>
               <span className="text-sm text-muted-foreground">
-                ({reviews.length} Reviews)
+                501 Reviews
               </span>
             </div>
           </div>

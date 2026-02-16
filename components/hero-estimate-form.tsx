@@ -66,7 +66,7 @@ export function HeroEstimateForm() {
     <div className="animate-slide-up animation-delay-600">
       <div className="rounded-xl bg-card p-6 shadow-xl border border-border">
         <h3 className="font-sans text-xl font-bold text-foreground mb-4">
-          Free Estimate
+          Request Free Estimate
         </h3>
 
         {submitted && (
