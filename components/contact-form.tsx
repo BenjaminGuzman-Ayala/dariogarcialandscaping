@@ -90,25 +90,14 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-      <div className="grid gap-6 sm:grid-cols-2">
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="firstName">First Name *</Label>
-          <Input
-            id="firstName"
-            name="firstName"
-            placeholder="Your first name"
-            required
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="lastName">Last Name *</Label>
-          <Input
-            id="lastName"
-            name="lastName"
-            placeholder="Your last name"
-            required
-          />
-        </div>
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="name">Full Name *</Label>
+        <Input
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2">

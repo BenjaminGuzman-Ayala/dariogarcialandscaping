@@ -73,20 +73,12 @@ export function HeroEstimateForm() {
         )}
 
         <form onSubmit={handleSubmit} className="space-y-3">
-          <div className="grid grid-cols-2 gap-3">
-            <Input
-              name="firstName"
-              placeholder="First Name"
-              required
-              className="text-sm"
-            />
-            <Input
-              name="lastName"
-              placeholder="Last Name"
-              required
-              className="text-sm"
-            />
-          </div>
+          <Input
+            name="name"
+            placeholder="Full Name"
+            required
+            className="text-sm"
+          />
 
           <Input
             name="email"
