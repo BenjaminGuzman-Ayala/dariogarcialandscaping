@@ -17,17 +17,23 @@ const serviceOptions = [
   "Landscaping",
   "Lawn Care",
   "Tree Removal",
-  "Snow Removal",
   "Brick Paving",
   "Fence Installation",
-  "Asphalt & Seal Coating",
   "Synthetic Lawn Installation",
   "Drainage Solutions",
-  "Other",
+  "4D Landscape Designs",
+  "Asphalt & Seal Coating",
+  "Snow Removal",
 ]
+
+const WEBHOOK_URL =
+  process.env.NODE_ENV === "development"
+    ? "https://base64team.app.n8n.cloud/webhook-test/lead-intake/15b5294a-cb37-417f-a437-0d506b7f8d8d"
+    : "https://base64team.app.n8n.cloud/webhook/lead-intake/15b5294a-cb37-417f-a437-0d506b7f8d8d"
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   if (submitted) {
     return (
@@ -59,33 +65,39 @@ export function ContactForm() {
     )
   }
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsLoading(true)
+
+    const form = e.currentTarget
+    const data = new FormData(form)
+    data.set("services", data.get("service") as string)
+    data.set("service_address", data.get("address") as string)
+
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      })
+      setSubmitted(true)
+    } catch {
+      // allow fallback
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault()
-        setSubmitted(true)
-      }}
-      className="flex flex-col gap-6"
-    >
-      <div className="grid gap-6 sm:grid-cols-2">
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="firstName">First Name *</Label>
-          <Input
-            id="firstName"
-            name="firstName"
-            placeholder="Your first name"
-            required
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="lastName">Last Name *</Label>
-          <Input
-            id="lastName"
-            name="lastName"
-            placeholder="Your last name"
-            required
-          />
-        </div>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="name">Full Name *</Label>
+        <Input
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2">
@@ -147,8 +159,8 @@ export function ContactForm() {
         />
       </div>
 
-      <Button type="submit" size="lg" className="w-full sm:w-auto">
-        Submit Request
+      <Button type="submit" size="lg" className="w-full sm:w-auto" disabled={isLoading}>
+        {isLoading ? "Sending..." : "Submit Request"}
       </Button>
 
       <p className="text-xs text-muted-foreground">

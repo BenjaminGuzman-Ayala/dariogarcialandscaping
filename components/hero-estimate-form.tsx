@@ -13,17 +13,22 @@ import {
 } from '@/components/ui/select'
 
 const services = [
+  'Landscaping',
   'Lawn Care',
   'Tree Removal',
-  'Snow Removal',
   'Brick Paving',
-  'Fencing',
-  'Asphalt/Seal Coating',
+  'Fence Installation',
+  'Synthetic Lawn Installation',
   'Drainage Solutions',
   '4D Landscape Designs',
-  'General Landscaping',
-  'Other',
+  'Asphalt & Seal Coating',
+  'Snow Removal',
 ]
+
+const WEBHOOK_URL =
+  process.env.NODE_ENV === "development"
+    ? "https://base64team.app.n8n.cloud/webhook-test/lead-intake/15b5294a-cb37-417f-a437-0d506b7f8d8d"
+    : "https://base64team.app.n8n.cloud/webhook/lead-intake/15b5294a-cb37-417f-a437-0d506b7f8d8d"
 
 export function HeroEstimateForm() {
   const [submitted, setSubmitted] = useState(false)
@@ -33,30 +38,22 @@ export function HeroEstimateForm() {
     e.preventDefault()
     setIsLoading(true)
 
-    const formData = new FormData(e.currentTarget)
-    const data = {
-      firstName: formData.get('firstName'),
-      lastName: formData.get('lastName'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      service: formData.get('service'),
-      message: formData.get('message'),
-    }
+    const form = e.currentTarget
+    const data = new FormData(form)
+    data.set("services", data.get("service") as string)
+    data.set("service_address", data.get("propertyAddress") as string)
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
       })
-
-      if (response.ok) {
-        setSubmitted(true)
-        ;(e.target as HTMLFormElement).reset()
-        setTimeout(() => setSubmitted(false), 5000)
-      }
-    } catch (error) {
-      console.error('Form submission error:', error)
+      setSubmitted(true)
+      form.reset()
+      setTimeout(() => setSubmitted(false), 5000)
+    } catch {
+      // allow fallback
     } finally {
       setIsLoading(false)
     }
@@ -76,20 +73,12 @@ export function HeroEstimateForm() {
         )}
 
         <form onSubmit={handleSubmit} className="space-y-3">
-          <div className="grid grid-cols-2 gap-3">
-            <Input
-              name="firstName"
-              placeholder="First Name"
-              required
-              className="text-sm"
-            />
-            <Input
-              name="lastName"
-              placeholder="Last Name"
-              required
-              className="text-sm"
-            />
-          </div>
+          <Input
+            name="name"
+            placeholder="Full Name"
+            required
+            className="text-sm"
+          />
 
           <Input
             name="email"

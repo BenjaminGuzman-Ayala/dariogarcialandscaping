@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { Phone, Menu, X, Facebook, Instagram } from "lucide-react"
+import { Phone, Menu, X, Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -22,7 +22,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
+        <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-2 text-xs">
           <span>Serving Summit, Chicago & Surrounding Suburbs</span>
           <a
             href="tel:3129850996"
@@ -73,7 +73,7 @@ export function SiteHeader() {
         <div className="hidden lg:flex items-center gap-4">
           <div className="flex items-center gap-2.5">
             <a
-              href="https://www.facebook.com/dariogarcialandscaping"
+              href="https://www.facebook.com/DarioGarciaLandscaping1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -82,23 +82,14 @@ export function SiteHeader() {
               <Facebook className="h-[18px] w-[18px]" />
             </a>
             <a
-              href="https://www.instagram.com/dariogarcialandscaping"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="text-muted-foreground transition-colors hover:text-primary"
-            >
-              <Instagram className="h-[18px] w-[18px]" />
-            </a>
-            <a
-              href="https://www.yelp.com/biz/dario-garcia-landscaping-summit"
+              href="https://www.yelp.com/biz/dario-garcia-landscaping-lyons?osq=Dario+Garcia+Landscaping"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Yelp"
               className="text-muted-foreground transition-colors hover:text-primary"
             >
               <svg className="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.056-2.97c.282-.415.862-.46 1.225-.177l2.89 2.168c.424.318.424.998 0 1.176zM16.349 17.545l-2.89-3.736c-.565-.73.174-1.71 1.04-1.39l5.096 1.89c.47.175.645.76.352 1.176l-2.206 2.846c-.282.41-.862.41-1.176.177l-.216-.963zM13.052 7.85l-.962 5.273c-.174.96-1.457 1.09-1.845.188L6.507 4.26c-.174-.464.117-.962.597-1.073l5.683-1.3c.464-.112.907.246.907.72V7.85h-.642zM11.04 15.2c.108-.94-1.002-1.537-1.684-.907L4.612 18.9c-.346.318-.173.884.282 1.002l5.273 1.3c.464.112.907-.245.907-.72l-.034-5.282zM10.79 12.3c-.108-.94-1.326-1.22-1.844-.42L4.558 18.3c-.276.415.058.95.558.95h5.45c.464 0 .82-.392.758-.85l-.534-6.1z"/>
+                <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.056-2.97c.282-.415.862-.46 1.225-.177l2.89 2.168c.424.318.424.998 0 1.176zM16.349 17.545l-2.89-3.736c-.565-.73.174-1.71 1.04-1.39l5.096 1.89c.47.175.645.76.352 1.176l-2.206 2.846c-.282.41-.862.41-1.176.177l-.216-.963zM13.052 7.85l-.962 5.273c-.174.96-1.457 1.09-1.845.188L6.507 4.26c-.174-.464.117-.962.597-1.073l5.683-1.3c.464-.112.907.246.907.72V7.85h-.642zM11.04 15.2c.108-.94-1.002-1.537-1.684-.907L4.612 18.9c-.346.318-.173.884.282 1.002l5.273 1.3c.464.112.907-.245.907-.72l-.034-5.282zM10.79 12.3c-.108-.94-1.326-1.22-1.844-.42L4.558 18.3c-.276.415.058.95.558.95h5.45c.464 0 .82-.392.758-.85l-.534-6.1z" />
               </svg>
             </a>
           </div>
@@ -149,7 +140,7 @@ export function SiteHeader() {
             </Button>
             <div className="flex items-center justify-center gap-4">
               <a
-                href="https://www.facebook.com/dariogarcialandscaping"
+                href="https://www.facebook.com/DarioGarciaLandscaping1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -158,23 +149,14 @@ export function SiteHeader() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/dariogarcialandscaping"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-muted-foreground transition-colors hover:text-primary"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.yelp.com/biz/dario-garcia-landscaping-summit"
+                href="https://www.yelp.com/biz/dario-garcia-landscaping-lyons?osq=Dario+Garcia+Landscaping"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Yelp"
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.056-2.97c.282-.415.862-.46 1.225-.177l2.89 2.168c.424.318.424.998 0 1.176zM16.349 17.545l-2.89-3.736c-.565-.73.174-1.71 1.04-1.39l5.096 1.89c.47.175.645.76.352 1.176l-2.206 2.846c-.282.41-.862.41-1.176.177l-.216-.963zM13.052 7.85l-.962 5.273c-.174.96-1.457 1.09-1.845.188L6.507 4.26c-.174-.464.117-.962.597-1.073l5.683-1.3c.464-.112.907.246.907.72V7.85h-.642zM11.04 15.2c.108-.94-1.002-1.537-1.684-.907L4.612 18.9c-.346.318-.173.884.282 1.002l5.273 1.3c.464.112.907-.245.907-.72l-.034-5.282zM10.79 12.3c-.108-.94-1.326-1.22-1.844-.42L4.558 18.3c-.276.415.058.95.558.95h5.45c.464 0 .82-.392.758-.85l-.534-6.1z"/>
+                  <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.056-2.97c.282-.415.862-.46 1.225-.177l2.89 2.168c.424.318.424.998 0 1.176zM16.349 17.545l-2.89-3.736c-.565-.73.174-1.71 1.04-1.39l5.096 1.89c.47.175.645.76.352 1.176l-2.206 2.846c-.282.41-.862.41-1.176.177l-.216-.963zM13.052 7.85l-.962 5.273c-.174.96-1.457 1.09-1.845.188L6.507 4.26c-.174-.464.117-.962.597-1.073l5.683-1.3c.464-.112.907.246.907.72V7.85h-.642zM11.04 15.2c.108-.94-1.002-1.537-1.684-.907L4.612 18.9c-.346.318-.173.884.282 1.002l5.273 1.3c.464.112.907-.245.907-.72l-.034-5.282zM10.79 12.3c-.108-.94-1.326-1.22-1.844-.42L4.558 18.3c-.276.415.058.95.558.95h5.45c.464 0 .82-.392.758-.85l-.534-6.1z" />
                 </svg>
               </a>
             </div>

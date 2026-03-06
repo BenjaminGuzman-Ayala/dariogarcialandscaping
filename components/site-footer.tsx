@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Shield } from "lucide-react"
 
 const services = [
   { href: "/services#landscaping", label: "Landscaping" },
@@ -23,6 +23,21 @@ const quickLinks = [
   { href: "/contact", label: "Contact" },
 ]
 
+const serviceAreas = {
+  "Northern Suburbs": [
+    "Skokie", "Evanston", "Wilmette", "Winnetka", "Morton Grove", "Niles", "Park Ridge", "Lincolnwood"
+  ],
+  "Western Suburbs": [
+    "Oak Park", "La Grange", "Brookfield", "Hinsdale", "Downers Grove", "Western Springs", "Willowbrook", "Hillside"
+  ],
+  "Southwest Suburbs": [
+    "Bridgeview", "Burbank", "Oak Lawn", "Hickory Hills", "Palos Park", "Justice", "Bedford Park"
+  ],
+  "City & Near-West": [
+    "Chicago", "Cicero", "Berwyn", "Lyons", "Summit", "Stickney", "Forest View"
+  ],
+}
+
 export function SiteFooter() {
   return (
     <footer className="bg-foreground text-background">
@@ -32,7 +47,7 @@ export function SiteFooter() {
           <div>
             <div className="mb-4">
               <Image
-                src="/images/logo.svg"
+                src="/dario-garcia-landscaping_logo_transparent.png"
                 alt="Dario Garcia Landscaping"
                 width={160}
                 height={54}
@@ -45,7 +60,7 @@ export function SiteFooter() {
             </p>
             <div className="mb-6 flex items-center gap-3">
               <a
-                href="https://www.facebook.com/dariogarcialandscaping"
+                href="https://www.facebook.com/DarioGarciaLandscaping1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -54,23 +69,14 @@ export function SiteFooter() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/dariogarcialandscaping"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-background/60 transition-colors hover:text-primary"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.yelp.com/biz/dario-garcia-landscaping-summit"
+                href="https://www.yelp.com/biz/dario-garcia-landscaping-lyons?osq=Dario+Garcia+Landscaping"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Yelp"
                 className="text-background/60 transition-colors hover:text-primary"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.056-2.97c.282-.415.862-.46 1.225-.177l2.89 2.168c.424.318.424.998 0 1.176zM16.349 17.545l-2.89-3.736c-.565-.73.174-1.71 1.04-1.39l5.096 1.89c.47.175.645.76.352 1.176l-2.206 2.846c-.282.41-.862.41-1.176.177l-.216-.963zM13.052 7.85l-.962 5.273c-.174.96-1.457 1.09-1.845.188L6.507 4.26c-.174-.464.117-.962.597-1.073l5.683-1.3c.464-.112.907.246.907.72V7.85h-.642zM11.04 15.2c.108-.94-1.002-1.537-1.684-.907L4.612 18.9c-.346.318-.173.884.282 1.002l5.273 1.3c.464.112.907-.245.907-.72l-.034-5.282zM10.79 12.3c-.108-.94-1.326-1.22-1.844-.42L4.558 18.3c-.276.415.058.95.558.95h5.45c.464 0 .82-.392.758-.85l-.534-6.1z"/>
+                  <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.056-2.97c.282-.415.862-.46 1.225-.177l2.89 2.168c.424.318.424.998 0 1.176zM16.349 17.545l-2.89-3.736c-.565-.73.174-1.71 1.04-1.39l5.096 1.89c.47.175.645.76.352 1.176l-2.206 2.846c-.282.41-.862.41-1.176.177l-.216-.963zM13.052 7.85l-.962 5.273c-.174.96-1.457 1.09-1.845.188L6.507 4.26c-.174-.464.117-.962.597-1.073l5.683-1.3c.464-.112.907.246.907.72V7.85h-.642zM11.04 15.2c.108-.94-1.002-1.537-1.684-.907L4.612 18.9c-.346.318-.173.884.282 1.002l5.273 1.3c.464.112.907-.245.907-.72l-.034-5.282zM10.79 12.3c-.108-.94-1.326-1.22-1.844-.42L4.558 18.3c-.276.415.058.95.558.95h5.45c.464 0 .82-.392.758-.85l-.534-6.1z" />
                 </svg>
               </a>
             </div>
@@ -134,27 +140,43 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          {/* Service Areas */}
+          {/* Business Hours & Trust Badge */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">
-              Service Areas
+              Business Hours
             </h3>
-            <p className="text-sm leading-relaxed text-background/70">
-              Summit, IL &bull; Chicago, IL &bull; Cicero, IL &bull; Berwyn, IL
-              &bull; Lyons, IL &bull; Bedford Park, IL &bull; Justice, IL &bull;
-              Bridgeview, IL &bull; Burbank, IL &bull; Oak Lawn, IL &bull; and
-              surrounding suburbs.
+            <p className="text-sm text-background/70">
+              Mon - Sat: 7:00 AM - 6:00 PM
+              <br />
+              Sun: Closed
             </p>
-            <div className="mt-6">
-              <h3 className="mb-2 text-sm font-semibold uppercase tracking-wider">
-                Business Hours
-              </h3>
-              <p className="text-sm text-background/70">
-                Mon - Sat: 7:00 AM - 6:00 PM
-                <br />
-                Sun: Closed
-              </p>
+
+            {/* Licensed, Bonded & Insured Badge */}
+            <div className="mt-6 inline-flex items-center py-2.5">
+              <span className="inline-flex items-center gap-1.5 rounded-sm border border-amber-500/50 bg-gradient-to-b from-neutral-900 to-black px-3 py-1 text-xs font-medium text-gray-200 shadow-md">
+                <Shield className="h-3.5 w-3.5 text-amber-400" />
+                Licensed, Bonded &amp; Insured
+              </span>
             </div>
+          </div>
+        </div>
+
+        {/* Service Areas Section */}
+        <div className="mt-12 border-t border-background/10 pt-10">
+          <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
+            Service Areas
+          </h3>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {Object.entries(serviceAreas).map(([heading, areas]) => (
+              <div key={heading}>
+                <h4 className="mb-3 text-sm font-medium text-primary">
+                  {heading}
+                </h4>
+                <p className="text-sm leading-relaxed text-background/70">
+                  {areas.join(" \u2022 ")}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

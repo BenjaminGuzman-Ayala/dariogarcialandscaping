@@ -8,9 +8,9 @@ const reasons = [
       "We treat every property like our own. As a family business, we take personal pride in every project we complete.",
   },
   {
-    title: "Licensed & Insured",
+    title: "Licensed, Bonded & Insured",
     description:
-      "Fully licensed and insured for your peace of mind. We meet all local requirements in Summit, IL and Cook County.",
+      "Fully licensed, bonded, and insured for your complete peace of mind. We meet all local requirements in Summit, IL and Cook County.",
   },
   {
     title: "Free Estimates",
