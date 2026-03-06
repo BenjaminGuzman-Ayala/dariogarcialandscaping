@@ -21,14 +21,14 @@ export function HeroSection() {
 
       {/* Award Badge - Top Right */}
       <div className="absolute right-4 top-4 z-10 hidden sm:block">
-
-        <Image
-          src="/Business Award Image_Dario Garcia Landscaping LLC.png"
-          alt="Business Award - Dario Garcia Landscaping LLC"
-          fill
-          className="object-contain p-1"
-        />
-
+        <div className="relative h-16 w-16 md:h-20 md:w-20 p-1.5 shadow-lg backdrop-blur-sm">
+          <Image
+            src="/Business Award Image_Dario Garcia Landscaping LLC.png"
+            alt="Business Award - Dario Garcia Landscaping LLC"
+            fill
+            className="object-contain p-1"
+          />
+        </div>
       </div>
 
       <div className="relative mx-auto flex max-w-7xl gap-8 px-4 py-24 lg:py-32">
