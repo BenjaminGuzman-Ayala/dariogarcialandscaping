@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Phone, ArrowRight, Star } from "lucide-react"
+import { Phone, ArrowRight, Star, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { HeroEstimateForm } from "@/components/hero-estimate-form"
 
@@ -19,12 +19,30 @@ export function HeroSection() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-foreground/60" />
 
+      {/* Award Badge - Top Right */}
+      <div className="absolute right-4 top-4 z-10 hidden sm:block">
+        <div className="relative h-16 w-16 md:h-20 md:w-20 rounded-full bg-background/90 p-1.5 shadow-lg backdrop-blur-sm">
+          <Image
+            src="/Business Award Image_Dario Garcia Landscaping LLC.png"
+            alt="Business Award - Dario Garcia Landscaping LLC"
+            fill
+            className="object-contain p-1"
+          />
+        </div>
+      </div>
+
       <div className="relative mx-auto flex max-w-7xl gap-8 px-4 py-24 lg:py-32">
         {/* Left content column */}
         <div className="flex-1">
-          <span className="mb-4 inline-block rounded-sm bg-primary px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-foreground animate-scale-in">
-            Design &bull; Maintenance &bull; Improvement
-          </span>
+          <div className="mb-4 flex flex-wrap items-center gap-3 animate-scale-in">
+            <span className="inline-block rounded-sm bg-primary px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
+              Design &bull; Maintenance &bull; Improvement
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-sm border border-background/30 bg-background/10 px-3 py-1 text-xs font-medium text-background backdrop-blur-sm">
+              <Shield className="h-3.5 w-3.5 text-primary" />
+              Licensed, Bonded &amp; Insured
+            </span>
+          </div>
           <h1 className="mb-4 max-w-2xl font-sans text-4xl font-bold leading-tight text-background md:text-5xl lg:text-6xl animate-slide-up animation-delay-100">
             <span className="text-balance">
               Professional Landscaping &amp; Outdoor Solutions in Summit, IL
