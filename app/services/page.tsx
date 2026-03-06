@@ -76,23 +76,7 @@ const services = [
       "Hazardous tree assessment and removal",
     ],
   },
-  {
-    id: "snow-removal",
-    icon: Snowflake,
-    title: "Snow Removal",
-    location: "Summit, IL & Chicagoland",
-    image: "/dg2.webp",
-    imageAlt: "Commercial snow removal with cleared sidewalk path next to brick building",
-    description:
-      "Do not let Chicago winters slow you down. Our reliable snow removal services keep your driveways, sidewalks, and parking lots clear and safe throughout the winter season. We offer both residential and commercial snow management plans.",
-    benefits: [
-      "Residential driveway and walkway clearing",
-      "Commercial parking lot snow plowing",
-      "Salt and de-icing application",
-      "24/7 emergency snow removal during storms",
-      "Seasonal contracts for worry-free winter care",
-    ],
-  },
+
   {
     id: "brick-paving",
     icon: Layers,
@@ -194,6 +178,23 @@ const services = [
       "Seal coating to prevent cracks and damage",
       "Pothole repair and patching",
       "Cost-effective surface restoration",
+    ],
+  },
+  {
+    id: "snow-removal",
+    icon: Snowflake,
+    title: "Snow Removal",
+    location: "Summit, IL & Chicagoland",
+    image: "/dg2.webp",
+    imageAlt: "Commercial snow removal with cleared sidewalk path next to brick building",
+    description:
+      "Do not let Chicago winters slow you down. Our reliable snow removal services keep your driveways, sidewalks, and parking lots clear and safe throughout the winter season. We offer both residential and commercial snow management plans.",
+    benefits: [
+      "Residential driveway and walkway clearing",
+      "Commercial parking lot snow plowing",
+      "Salt and de-icing application",
+      "24/7 emergency snow removal during storms",
+      "Seasonal contracts for worry-free winter care",
     ],
   },
 ]
