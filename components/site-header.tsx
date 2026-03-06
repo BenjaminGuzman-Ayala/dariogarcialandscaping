@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { Phone, Menu, X, Facebook, Instagram } from "lucide-react"
+import { Phone, Menu, X, Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -82,16 +82,7 @@ export function SiteHeader() {
               <Facebook className="h-[18px] w-[18px]" />
             </a>
             <a
-              href="https://www.instagram.com/dariogarcialandscaping"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="text-muted-foreground transition-colors hover:text-primary"
-            >
-              <Instagram className="h-[18px] w-[18px]" />
-            </a>
-            <a
-              href="https://www.yelp.com/biz/dario-garcia-landscaping-summit"
+              href="https://www.yelp.com/biz/dario-garcia-landscaping-lyons?osq=Dario+Garcia+Landscaping"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Yelp"
@@ -156,15 +147,6 @@ export function SiteHeader() {
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.instagram.com/dariogarcialandscaping"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-muted-foreground transition-colors hover:text-primary"
-              >
-                <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="https://www.yelp.com/biz/dario-garcia-landscaping-lyons?osq=Dario+Garcia+Landscaping"

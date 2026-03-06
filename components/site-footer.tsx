@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Phone, Mail, MapPin, Facebook, Instagram, Shield } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Shield } from "lucide-react"
 
 const services = [
   { href: "/services#landscaping", label: "Landscaping" },
@@ -69,16 +69,7 @@ export function SiteFooter() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/dariogarcialandscaping"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-background/60 transition-colors hover:text-primary"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.yelp.com/biz/dario-garcia-landscaping-summit"
+                href="https://www.yelp.com/biz/dario-garcia-landscaping-lyons?osq=Dario+Garcia+Landscaping"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Yelp"
