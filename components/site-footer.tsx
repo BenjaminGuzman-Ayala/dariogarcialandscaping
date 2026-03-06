@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Instagram, Shield } from "lucide-react"
 
 const services = [
   { href: "/services#landscaping", label: "Landscaping" },
@@ -149,7 +149,7 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          {/* Business Hours */}
+          {/* Business Hours & Trust Badge */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">
               Business Hours
@@ -159,6 +159,14 @@ export function SiteFooter() {
               <br />
               Sun: Closed
             </p>
+            
+            {/* Licensed, Bonded & Insured Badge */}
+            <div className="mt-6 inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/10 px-4 py-2.5">
+              <Shield className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium text-background">
+                Licensed, Bonded &amp; Insured
+              </span>
+            </div>
           </div>
         </div>
 
