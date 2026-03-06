@@ -21,7 +21,7 @@ export function HeroSection() {
 
       {/* Award Badge - Top Right */}
       <div className="absolute right-4 top-4 z-10 hidden sm:block">
-        <div className="relative h-16 w-16 md:h-20 md:w-20 p-1.5 shadow-lg backdrop-blur-sm">
+        <div className="relative h-16 w-16 md:h-20 md:w-20 p-1.5 shadow-lg">
           <Image
             src="/Business Award Image_Dario Garcia Landscaping LLC.png"
             alt="Business Award - Dario Garcia Landscaping LLC"
@@ -38,8 +38,8 @@ export function HeroSection() {
             <span className="inline-block rounded-sm bg-primary px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
               Design &bull; Maintenance &bull; Improvement
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-sm border border-background/30 bg-background/10 px-3 py-1 text-xs font-medium text-background backdrop-blur-sm">
-              <Shield className="h-3.5 w-3.5 text-primary" />
+            <span className="inline-flex items-center gap-1.5 rounded-sm border border-amber-500/50 bg-gradient-to-b from-neutral-900 to-black px-3 py-1 text-xs font-medium text-gray-200 shadow-md">
+              <Shield className="h-3.5 w-3.5 text-amber-400" />
               Licensed, Bonded &amp; Insured
             </span>
           </div>
