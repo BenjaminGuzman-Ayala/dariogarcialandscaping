@@ -167,7 +167,7 @@ export function SiteHeader() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://www.yelp.com/biz/dario-garcia-landscaping-summit"
+                href="https://www.yelp.com/biz/dario-garcia-landscaping-lyons?osq=Dario+Garcia+Landscaping"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Yelp"
