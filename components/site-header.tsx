@@ -73,7 +73,7 @@ export function SiteHeader() {
         <div className="hidden lg:flex items-center gap-4">
           <div className="flex items-center gap-2.5">
             <a
-              href="https://www.facebook.com/dariogarcialandscaping"
+              href="https://www.facebook.com/DarioGarciaLandscaping1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -149,7 +149,7 @@ export function SiteHeader() {
             </Button>
             <div className="flex items-center justify-center gap-4">
               <a
-                href="https://www.facebook.com/dariogarcialandscaping"
+                href="https://www.facebook.com/DarioGarciaLandscaping1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"

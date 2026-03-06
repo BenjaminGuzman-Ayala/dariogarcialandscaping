@@ -60,7 +60,7 @@ export function SiteFooter() {
             </p>
             <div className="mb-6 flex items-center gap-3">
               <a
-                href="https://www.facebook.com/dariogarcialandscaping"
+                href="https://www.facebook.com/DarioGarciaLandscaping1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -159,11 +159,11 @@ export function SiteFooter() {
               <br />
               Sun: Closed
             </p>
-            
+
             {/* Licensed, Bonded & Insured Badge */}
-            <div className="mt-6 inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/10 px-4 py-2.5">
-              <Shield className="h-5 w-5 text-primary" />
-              <span className="text-sm font-medium text-background">
+            <div className="mt-6 inline-flex items-center py-2.5">
+              <span className="inline-flex items-center gap-1.5 rounded-sm border border-amber-500/50 bg-gradient-to-b from-neutral-900 to-black px-3 py-1 text-xs font-medium text-gray-200 shadow-md">
+                <Shield className="h-3.5 w-3.5 text-amber-400" />
                 Licensed, Bonded &amp; Insured
               </span>
             </div>
