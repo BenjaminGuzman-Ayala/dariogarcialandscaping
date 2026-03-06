@@ -109,15 +109,35 @@ export default function ContactPage() {
 
               {/* Service Areas */}
               <div className="mt-10 rounded-lg border border-border bg-card p-6">
-                <h3 className="mb-3 font-semibold text-card-foreground">
+                <h3 className="mb-4 font-semibold text-card-foreground">
                   Service Areas
                 </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  Summit, IL &bull; Chicago, IL &bull; Cicero, IL &bull; Berwyn,
-                  IL &bull; Lyons, IL &bull; Bedford Park, IL &bull; Justice, IL
-                  &bull; Bridgeview, IL &bull; Burbank, IL &bull; Oak Lawn, IL
-                  &bull; and surrounding suburbs.
-                </p>
+                <div className="flex flex-col gap-4">
+                  <div>
+                    <h4 className="mb-1.5 text-sm font-medium text-primary">Northern Suburbs</h4>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Skokie &bull; Evanston &bull; Wilmette &bull; Winnetka &bull; Morton Grove &bull; Niles &bull; Park Ridge &bull; Lincolnwood
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="mb-1.5 text-sm font-medium text-primary">Western Suburbs</h4>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Oak Park &bull; La Grange &bull; Brookfield &bull; Hinsdale &bull; Downers Grove &bull; Western Springs &bull; Willowbrook &bull; Hillside
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="mb-1.5 text-sm font-medium text-primary">Southwest Suburbs</h4>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Bridgeview &bull; Burbank &bull; Oak Lawn &bull; Hickory Hills &bull; Palos Park &bull; Justice &bull; Bedford Park
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="mb-1.5 text-sm font-medium text-primary">City &amp; Near-West</h4>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Chicago &bull; Cicero &bull; Berwyn &bull; Lyons &bull; Summit &bull; Stickney &bull; Forest View
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 

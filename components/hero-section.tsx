@@ -38,10 +38,7 @@ export function HeroSection() {
             <span className="inline-block rounded-sm bg-primary px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
               Design &bull; Maintenance &bull; Improvement
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-sm border border-amber-500/50 bg-gradient-to-b from-neutral-900 to-black px-3 py-1 text-xs font-medium text-gray-200 shadow-md">
-              <Shield className="h-3.5 w-3.5 text-amber-400" />
-              Licensed, Bonded &amp; Insured
-            </span>
+
           </div>
           <h1 className="mb-4 max-w-2xl font-sans text-4xl font-bold leading-tight text-background md:text-5xl lg:text-6xl animate-slide-up animation-delay-100">
             <span className="text-balance">
