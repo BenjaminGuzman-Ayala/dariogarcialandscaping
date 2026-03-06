@@ -23,6 +23,21 @@ const quickLinks = [
   { href: "/contact", label: "Contact" },
 ]
 
+const serviceAreas = {
+  "Northern Suburbs": [
+    "Skokie", "Evanston", "Wilmette", "Winnetka", "Morton Grove", "Niles", "Park Ridge", "Lincolnwood"
+  ],
+  "Western Suburbs": [
+    "Oak Park", "La Grange", "Brookfield", "Hinsdale", "Downers Grove", "Western Springs", "Willowbrook", "Hillside"
+  ],
+  "Southwest Suburbs": [
+    "Bridgeview", "Burbank", "Oak Lawn", "Hickory Hills", "Palos Park", "Justice", "Bedford Park"
+  ],
+  "City & Near-West": [
+    "Chicago", "Cicero", "Berwyn", "Lyons", "Summit", "Stickney", "Forest View"
+  ],
+}
+
 export function SiteFooter() {
   return (
     <footer className="bg-foreground text-background">
@@ -134,27 +149,35 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          {/* Service Areas */}
+          {/* Business Hours */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">
-              Service Areas
+              Business Hours
             </h3>
-            <p className="text-sm leading-relaxed text-background/70">
-              Summit, IL &bull; Chicago, IL &bull; Cicero, IL &bull; Berwyn, IL
-              &bull; Lyons, IL &bull; Bedford Park, IL &bull; Justice, IL &bull;
-              Bridgeview, IL &bull; Burbank, IL &bull; Oak Lawn, IL &bull; and
-              surrounding suburbs.
+            <p className="text-sm text-background/70">
+              Mon - Sat: 7:00 AM - 6:00 PM
+              <br />
+              Sun: Closed
             </p>
-            <div className="mt-6">
-              <h3 className="mb-2 text-sm font-semibold uppercase tracking-wider">
-                Business Hours
-              </h3>
-              <p className="text-sm text-background/70">
-                Mon - Sat: 7:00 AM - 6:00 PM
-                <br />
-                Sun: Closed
-              </p>
-            </div>
+          </div>
+        </div>
+
+        {/* Service Areas Section */}
+        <div className="mt-12 border-t border-background/10 pt-10">
+          <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
+            Service Areas
+          </h3>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {Object.entries(serviceAreas).map(([heading, areas]) => (
+              <div key={heading}>
+                <h4 className="mb-3 text-sm font-medium text-primary">
+                  {heading}
+                </h4>
+                <p className="text-sm leading-relaxed text-background/70">
+                  {areas.join(" \u2022 ")}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
