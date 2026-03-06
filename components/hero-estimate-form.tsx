@@ -13,16 +13,16 @@ import {
 } from '@/components/ui/select'
 
 const services = [
+  'Landscaping',
   'Lawn Care',
   'Tree Removal',
-  'Snow Removal',
   'Brick Paving',
-  'Fencing',
-  'Asphalt/Seal Coating',
+  'Fence Installation',
+  'Synthetic Lawn Installation',
   'Drainage Solutions',
   '4D Landscape Designs',
-  'General Landscaping',
-  'Other',
+  'Asphalt & Seal Coating',
+  'Snow Removal',
 ]
 
 const WEBHOOK_URL =

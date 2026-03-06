@@ -17,13 +17,13 @@ const serviceOptions = [
   "Landscaping",
   "Lawn Care",
   "Tree Removal",
-  "Snow Removal",
   "Brick Paving",
   "Fence Installation",
-  "Asphalt & Seal Coating",
   "Synthetic Lawn Installation",
   "Drainage Solutions",
-  "Other",
+  "4D Landscape Designs",
+  "Asphalt & Seal Coating",
+  "Snow Removal",
 ]
 
 const WEBHOOK_URL =
