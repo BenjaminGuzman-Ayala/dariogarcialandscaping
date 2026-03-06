@@ -33,13 +33,7 @@ const services = [
       "Safe and efficient tree removal, trimming, and stump grinding services for the Chicago area.",
     href: "/services#tree-removal",
   },
-  {
-    icon: Snowflake,
-    title: "Snow Removal",
-    description:
-      "Reliable residential and commercial snow plowing, salting, and ice management throughout the winter season.",
-    href: "/services#snow-removal",
-  },
+
   {
     icon: Layers,
     title: "Brick Paving",
@@ -54,13 +48,7 @@ const services = [
       "Wood, vinyl, and chain-link fence installation for privacy, security, and curb appeal.",
     href: "/services#fences",
   },
-  {
-    icon: Hammer,
-    title: "Asphalt & Seal Coating",
-    description:
-      "Professional asphalt paving, repair, and seal coating for driveways and parking lots.",
-    href: "/services#asphalt",
-  },
+
   {
     icon: Droplets,
     title: "Drainage Solutions",
@@ -75,6 +63,20 @@ const services = [
       "Photorealistic 4D renderings so you can visualize your dream outdoor space before construction begins.",
     href: "/services#4d-designs",
   },
+  {
+    icon: Snowflake,
+    title: "Snow Removal",
+    description:
+      "Reliable residential and commercial snow plowing, salting, and ice management throughout the winter season.",
+    href: "/services#snow-removal",
+  },
+  {
+    icon: Hammer,
+    title: "Asphalt & Seal Coating",
+    description:
+      "Professional asphalt paving, repair, and seal coating for driveways and parking lots.",
+    href: "/services#asphalt",
+  }
 ]
 
 export function ServicesOverview() {
