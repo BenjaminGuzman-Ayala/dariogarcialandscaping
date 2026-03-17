@@ -23,7 +23,7 @@ export function SiteHeader() {
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-2 text-xs">
-          <span>Serving Summit, Chicago & Surrounding Suburbs</span>
+          <span>Serving Chicago & Surrounding Suburbs</span>
           <a
             href="tel:3129850996"
             className="flex items-center gap-1.5 font-semibold hover:underline"
