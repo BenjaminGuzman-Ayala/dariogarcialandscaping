@@ -53,6 +53,32 @@ function validatePhone(phone: string): boolean {
   return phoneRegex.test(phone.replace(/\s/g, ''))
 }
 
+function validateAddress(address: string): { isValid: boolean; error?: string } {
+  const trimmed = address.trim()
+  
+  if (!trimmed) {
+    return { isValid: false, error: "Property address is required" }
+  }
+  
+  // Check for zip code (5 digits or 5+4 format)
+  const zipRegex = /\b\d{5}(-\d{4})?\b/
+  if (!zipRegex.test(trimmed)) {
+    return { isValid: false, error: "Please include a valid ZIP code (e.g., 60601)" }
+  }
+  
+  // Check for city - should have at least one word followed by state or comma
+  // Looking for patterns like "Chicago, IL" or "Chicago IL" or just city name with zip
+  const hasCity = trimmed.split(/[,\s]+/).filter(part => 
+    part.length > 1 && !/^\d+$/.test(part) && !/^[A-Z]{2}$/.test(part)
+  ).length >= 2
+  
+  if (!hasCity) {
+    return { isValid: false, error: "Please include street address and city" }
+  }
+  
+  return { isValid: true }
+}
+
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -124,8 +150,9 @@ export function ContactForm() {
       newErrors.otherService = "Please describe the service you need"
     }
 
-    if (!address || address.trim() === "") {
-      newErrors.address = "Property address is required"
+    const addressValidation = validateAddress(address)
+    if (!addressValidation.isValid) {
+      newErrors.address = addressValidation.error
     }
 
     if (!message || message.trim() === "") {
@@ -272,11 +299,11 @@ export function ContactForm() {
       )}
 
       <div className="flex flex-col gap-2">
-        <Label htmlFor="address">Property Address *</Label>
+        <Label htmlFor="address">Property Address (Street, City, ZIP) *</Label>
         <Input
           id="address"
           name="address"
-          placeholder="Street address, city, zip code"
+          placeholder="123 Main St, Chicago, IL 60601"
           required
           aria-invalid={!!errors.address}
           className={errors.address ? "border-destructive" : ""}
