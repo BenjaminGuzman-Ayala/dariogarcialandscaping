@@ -30,7 +30,7 @@ const serviceOptions = [
 const WEBHOOK_URL =
   process.env.NODE_ENV === "development"
     ? "https://base64team.app.n8n.cloud/webhook-test/lead-intake/15b5294a-cb37-417f-a437-0d506b7f8d8d"
-    : "https://base64team.app.n8n.cloud/webhook-test/lead-intake/15b5294a-cb37-417f-a437-0d506b7f8d8d"
+    : "https://base64team.app.n8n.cloud/webhook/lead-intake/15b5294a-cb37-417f-a437-0d506b7f8d8d"
 
 interface FormErrors {
   name?: string
