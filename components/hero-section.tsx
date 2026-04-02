@@ -31,10 +31,10 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="relative mx-auto flex max-w-7xl gap-8 px-4 py-24 lg:py-32">
+      <div className="relative mx-auto flex max-w-7xl flex-col gap-8 px-4 py-16 sm:py-20 lg:flex-row lg:py-32">
         {/* Left content column */}
-        <div className="flex-1">
-          <div className="mb-4 flex flex-wrap items-center gap-3 animate-scale-in">
+        <div className="flex-1 text-center lg:text-left">
+          <div className="mb-4 flex flex-wrap items-center justify-center gap-3 animate-scale-in lg:justify-start">
             <span className="inline-block rounded-sm bg-primary px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
               Design &bull; Maintenance &bull; Improvement
             </span>
@@ -43,17 +43,17 @@ export function HeroSection() {
               Licensed, Bonded &amp; Insured
             </span>
           </div>
-          <h1 className="mb-4 max-w-2xl font-sans text-4xl font-bold leading-tight text-background md:text-5xl lg:text-6xl animate-slide-up animation-delay-100">
+          <h1 className="mb-4 mx-auto max-w-2xl font-sans text-3xl font-bold leading-tight text-background sm:text-4xl md:text-5xl lg:mx-0 lg:text-6xl animate-slide-up animation-delay-100">
             <span className="text-balance">
               Professional Landscaping &amp; Outdoor Solutions in Summit, IL
             </span>
           </h1>
-          <p className="mb-6 max-w-xl text-lg leading-relaxed text-background/85 animate-fade-in animation-delay-200">
+          <p className="mb-6 mx-auto max-w-xl text-base leading-relaxed text-background/85 sm:text-lg lg:mx-0 animate-fade-in animation-delay-200">
             We specialize in designing, maintaining, and improving outdoor spaces. Custom gardening, landscaping, and green space solutions that transform your property into a beautiful, functional environment.
           </p>
 
           {/* Value props */}
-          <div className="mb-6 flex max-w-lg gap-6 animate-fade-in animation-delay-200">
+          <div className="mb-6 flex flex-col sm:flex-row mx-auto max-w-lg gap-4 sm:gap-6 animate-fade-in animation-delay-200 lg:mx-0">
             <div>
               <p className="font-semibold text-background text-sm mb-0.5">Easy to Get Started</p>
               <p className="text-xs text-background/70">Contact us and we make your outdoor dreams a reality.</p>
@@ -65,7 +65,7 @@ export function HeroSection() {
           </div>
 
           {/* Google Reviews Badge */}
-          <div className="mb-6 flex items-center gap-3 rounded-lg bg-background/10 px-4 py-3 backdrop-blur-sm animate-fade-in animation-delay-300 w-fit">
+          <div className="mb-6 flex items-center justify-center gap-3 rounded-lg bg-background/10 px-4 py-3 backdrop-blur-sm animate-fade-in animation-delay-300 w-fit mx-auto lg:mx-0">
             <svg
               className="h-6 w-6 shrink-0"
               viewBox="0 0 24 24"
@@ -95,7 +95,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 sm:flex-row animate-fade-in animation-delay-400">
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start animate-fade-in animation-delay-400">
             <Button size="lg" asChild>
               <a href="tel:3129850996" className="gap-2">
                 <Phone className="h-5 w-5" />
@@ -116,8 +116,8 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right form column - hidden on smaller screens */}
-        <div className="hidden w-80 shrink-0 lg:block sticky top-32 h-fit">
+        {/* Form column - stacks below content on mobile, side by side on desktop */}
+        <div className="w-full shrink-0 lg:w-80 lg:sticky lg:top-32 lg:h-fit">
           <HeroEstimateForm />
         </div>
       </div>
