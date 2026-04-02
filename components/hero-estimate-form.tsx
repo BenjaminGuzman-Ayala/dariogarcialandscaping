@@ -171,9 +171,9 @@ export function HeroEstimateForm() {
   }
 
   return (
-    <div className="animate-slide-up animation-delay-600">
-      <div className="rounded-xl bg-card p-6 shadow-xl border border-border">
-        <h3 className="font-sans text-xl font-bold text-foreground mb-4">
+    <div className="animate-slide-up animation-delay-600 w-full max-w-md mx-auto lg:max-w-none">
+      <div className="rounded-xl bg-card p-5 sm:p-6 shadow-xl border border-border">
+        <h3 className="font-sans text-lg sm:text-xl font-bold text-foreground mb-4 text-center lg:text-left">
           Request Free Estimate
         </h3>
 
