@@ -7,7 +7,7 @@ export function LocalBusinessSchema() {
     "@id": "https://dariogarcialandscaping.com",
     url: "https://dariogarcialandscaping.com",
     telephone: "+1-312-985-0996",
-    email: "info@dariogarcialandscaping.com",
+    email: "info@dariogl.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "5818 S Archer Rd",
