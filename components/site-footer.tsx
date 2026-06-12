@@ -93,11 +93,11 @@ export function SiteFooter() {
                 (312) 985-0996
               </a>
               <a
-                href="mailto:info@dariogarcialandscaping.com"
+                href="mailto:info@dariogl.com"
                 className="flex items-center gap-2 transition-colors hover:text-primary"
               >
                 <Mail className="h-4 w-4 shrink-0 text-primary" />
-                info@dariogarcialandscaping.com
+                info@dariogl.com
               </a>
             </address>
           </div>

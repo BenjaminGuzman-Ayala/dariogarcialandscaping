@@ -68,10 +68,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
                     <a
-                      href="mailto:info@dariogarcialandscaping.com"
+                      href="mailto:info@dariogl.com"
                       className="text-muted-foreground transition-colors hover:text-primary"
                     >
-                      info@dariogarcialandscaping.com
+                      info@dariogl.com
                     </a>
                   </div>
                 </div>
