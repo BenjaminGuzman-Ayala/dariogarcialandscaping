@@ -23,7 +23,7 @@ export function HeroSection() {
       <div className="absolute right-4 top-4 z-10 hidden sm:block">
         <div className="relative h-16 w-16 md:h-20 md:w-20 p-1.5 shadow-lg">
           <Image
-            src="/Business Award Image_Dario Garcia Landscaping LLC.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BusinessRate_Award%20Image%20%281%29-uzYtcqN9He4Keq5uGIhUU9SxWLYsyq.png"
             alt="Business Award - Dario Garcia Landscaping LLC"
             fill
             className="object-contain p-1"

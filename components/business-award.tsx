@@ -24,7 +24,7 @@ export function BusinessAward() {
                       <div className="rounded-md bg-gradient-to-b from-gray-100 to-gray-200 p-0.5">
                         <div className="overflow-hidden rounded bg-white p-2">
                           <Image
-                            src="/Business Award Image_Dario Garcia Landscaping LLC.png"
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BusinessRate_Award%20Image%20%281%29-uzYtcqN9He4Keq5uGIhUU9SxWLYsyq.png"
                             alt="Business Award - Dario Garcia Landscaping LLC"
                             width={280}
                             height={350}
